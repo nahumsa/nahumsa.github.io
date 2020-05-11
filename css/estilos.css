@@ -1,0 +1,38 @@
+body {
+  background: #0063ff;  
+  background-size: auto 100vh;
+  font-family: 'Roboto';
+  height: 100vh;
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  background-color: white;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style:none;
+}
+
+.site-subtitle,
+.site-title{
+  color: whitesmoke;
+  text-align: center;  
+}
+
+.site-subtitle{
+  font-style: italic;
+}
