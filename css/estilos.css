@@ -10,7 +10,7 @@ body {
   background-size: auto 100vh;
   font-family: 'Roboto';
   height: 100vh;
-  font-size: 10px;
+  font-size: 10px;  
 }
 
 /* Se a tela tiver pelo menos 400px vai carregar estes estilos */
@@ -70,18 +70,59 @@ a:hover {
   list-style:none;
 }
 
-.site-subtitle,
 .site-title{
   color: whitesmoke;
   text-align: center; 
   font-size: 2em; 
+  font-family: 'Montserrat', sans-serif;
 }
+
 
 .site-subtitle{
-  font-style: italic;
+  color: whitesmoke;
+  text-align: center; 
+  font-size: 2em; 
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
 }
 
-.img-portfolio{
-  height: 180px;
-  width: 180px;
+.portifolio{
+  font-family: 'Ubuntu', sans-serif;
+  color: whitesmoke;
+  padding: 2em;
+  margin-bottom: 2em;
+  height: 100vh;
+}
+
+.portifolio h2{
+  margin-bottom: 1.2em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.portifolio .grid{
+  display: grid;
+  gap: 2em;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .portifolio .grid {
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+
+@media (min-width: 900px) {
+  .portifolio .grid {
+    grid-template-columns: repeat(3, 240px);
+    justify-content: center;
+    height: calc(100vh - 4em - 48px -1.2em);
+  }
+}
+
+.img-portfolio {
+  height: 210px;
+  width: 210px;
+  object-fit: cover;
+  object-position: auto;  
 }
