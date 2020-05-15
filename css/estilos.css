@@ -13,14 +13,13 @@ body {
   font-size: 10px;  
 }
 
-/* Se a tela tiver pelo menos 400px vai carregar estes estilos */
+
 @media (min-width: 400px) {
   body {
     font-size: 14px;
   }
 }
 
-/* break points */
 @media (min-width: 600px) {
   body {
     font-size: 18px;
@@ -43,6 +42,7 @@ header {
 .menu a {  
   display: block;
   padding: 10px 20px;
+  transition: background-color 0.5s , color 0.8s;
 }
 
 a {
@@ -50,8 +50,10 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.menu a:hover {
   text-decoration: underline;
+  background-color: teal;
+  color: wheat;
 }
 
 .menu {
@@ -59,6 +61,7 @@ a:hover {
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 1;
 }
 
 .menu ul {
@@ -68,6 +71,17 @@ a:hover {
 
 .menu li {
   list-style:none;
+}
+
+.title {  
+  opacity: 0;
+  animation: linear 2s animtitle forwards;
+}
+
+@keyframes animtitle{  
+  to {     
+    opacity: 1;
+  }
 }
 
 .site-title{
@@ -86,14 +100,17 @@ a:hover {
   line-height: 1.5em;
 }
 
+.contato,
 .portifolio{
   font-family: 'Ubuntu', sans-serif;
   color: whitesmoke;
   padding: 2em;
   margin-bottom: 2em;
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 4em;
 }
 
+.contato h2,
 .portifolio h2{
   margin-bottom: 1.2em;
   font-size: 2em;
@@ -125,4 +142,25 @@ a:hover {
   width: 210px;
   object-fit: cover;
   object-position: auto;  
+  transition: transform 500ms;
+}
+
+.img-portfolio:hover{
+  transform: scale(1.1);
+}
+
+.contato .icons{
+  text-align: center;
+}
+
+.contato a{
+  font-size: 6em;
+  color: whitesmoke;
+  transition: text-shadow 1s;
+}
+
+.contato a:active, 
+.contato a:hover{
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }

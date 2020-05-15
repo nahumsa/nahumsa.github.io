@@ -7,25 +7,25 @@
     <link rel="icon" href="img/favicon.ico" type="image/png" />
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bb612f00a5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="menu">
           <ul>
+            <li><a href="#home"><i class="fas fa-home"></i></a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#contatos">Contato</a></li>
           </ul>
           </nav>
-          <div>
+          <div class="title" id="home">
             <h1 class="site-title">Nahum Sá</h1>
             <h2 class="site-subtitle">Deep Learning | Quantum Computing</h2> 
             <h2 class="site-subtitle">PhD Student @ CBPF</h2> 
-          </div>          
-    </header>
-      <a name="projetos">
-      <section class="portifolio">
-      </a>
+          </div>                
+    </header>      
+      <section class="portifolio" id="projetos">      
         <h2>Projetos</h2>
         
         <div class="grid">
@@ -48,6 +48,24 @@
             </a>
           </figure>
         </div>    
-      </section> 
+      </section>       
+
+      <section class="contato", id="contatos">      
+        <h2>Contato</h2>
+        <div class="grid icons">
+          <a target="_blank" href="https://github.com/nahumsa">
+            <i class="fab fa-github-square"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/sa_nahum">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a target="_blank" href="https://linkedin.com/in/nahumsa">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:nahumsa@cbpf.br">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+        </div>
+      
 </body>
 </html>
