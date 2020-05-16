@@ -100,21 +100,53 @@ a {
   line-height: 1.5em;
 }
 
+
+
+
+.sobre,
 .contato,
 .portifolio{
   font-family: 'Ubuntu', sans-serif;
   color: whitesmoke;
   padding: 2em;
   margin-bottom: 2em;
-  min-height: 100vh;
   padding-top: 4em;
+  height: 100vh;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+
+.sobre h2,
 .contato h2,
 .portifolio h2{
   margin-bottom: 1.2em;
   font-size: 2em;
   text-align: center;
+}
+
+.sobre p {
+  color: whitesmoke;
+  text-indent: 2em;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+@media (min-width: 600px) {
+.sobre .avatar {
+  float: left;
+  margin-right: 1.5em;
+}
+}
+
+.sobre .avatar img {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
 .portifolio .grid{
@@ -137,20 +169,22 @@ a {
   }
 }
 
-.img-portfolio {
-  height: 210px;
-  width: 210px;
-  object-fit: cover;
-  object-position: auto;  
-  transition: transform 500ms;
-}
-
 .img-portfolio:hover{
   transform: scale(1.1);
 }
 
+
+
+.img-portfolio {
+  height: 210px;
+  width: 210px;
+  object-fit: cover;
+  object-position: center;  
+}
+
+
 .contato .icons{
-  text-align: center;
+  text-align: center;  
 }
 
 .contato a{
