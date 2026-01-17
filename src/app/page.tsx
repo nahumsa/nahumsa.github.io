@@ -1,5 +1,9 @@
 import Image from 'next/image'
 import HeroSection from "./components/herosection"
+import ProjectsSection from "./components/projects"
+import SkillsSection from "./components/skills"
+import AchievementsSection from "./components/achievements"
+import ContactSection from "./components/contact"
 
 export default function Home() {
   return (
@@ -10,6 +14,10 @@ export default function Home() {
       <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"/>
       <div className="container">
         <HeroSection />
+        <ProjectsSection />
+        <SkillsSection />
+        <AchievementsSection />
+        <ContactSection />
       </div>
     </main>
   )

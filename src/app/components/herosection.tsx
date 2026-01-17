@@ -1,34 +1,29 @@
+"use client";
 import React from "react";
-import Link from 'next/link';
-import {FaLinkedin, FaGithub} from 'react-icons/fa6';
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section id="about">
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-7 place-self-center">
-          <h1 className="text-emerald-200 mb-4 mt-4 text-4xl lg:text-6xl font-extrabold">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-7 place-self-center"
+        >
+          <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
             Nahum Sá
           </h1>
-          <p className="text-white-100 text-base sm:text-lg mb-4 lg:text-xl">
-            Data and Machine Learning Engineer experienced in creating solutions that have scalability and consistency in mind.
+          <p className="text-white-100 text-lg mb-4 lg:text-xl">
+            I'm a Data and ML Engineer focused on architecting and delivering high-impact, production-grade data platforms. My expertise lies in translating ambiguous data science objectives into scalable, reliable, and cost-optimized cloud infrastructure.
+            My career path has equipped me to engage stakeholders, define technical requirements, and implement end-to-end data solutions across diverse client domains, such as Supply Chain, Law, Oil and Gas, Industrial Asset Management.
           </p>
-          <div className="place-self-center">
-            <a target="_blank" href="https://www.linkedin.com/in/nahumsa/">
-              <button className="h-12 px-6 m-2 text-lg text-white-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-emerald-300">
-                <FaLinkedin />
-              </button>
-            </a>
-            <a target="_blank" href="https://github.com/nahumsa">
-              <button className="h-12 px-6 m-2 text-lg text-white-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-emerald-300">
-                <FaGithub />
-              </button>
-            </a>
-          </div>
-          </div>
+        </motion.div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <img 
+            <img
               src="/images/programmer-image.png"
               alt="image"
               width={300}
@@ -37,9 +32,9 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
 export default HeroSection;
