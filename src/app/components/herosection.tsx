@@ -17,13 +17,13 @@ const HeroSection = () => {
             Nahum Sá
           </h1>
           <p className="text-white-100 text-lg mb-4 lg:text-xl">
-            I'm a Data and ML Engineer focused on architecting and delivering high-impact, production-grade data platforms. My expertise lies in translating ambiguous data science objectives into scalable, reliable, and cost-optimized cloud infrastructure.
+            I&apos;m a Data and ML Engineer focused on architecting and delivering high-impact, production-grade data platforms. My expertise lies in translating ambiguous data science objectives into scalable, reliable, and cost-optimized cloud infrastructure.
             My career path has equipped me to engage stakeholders, define technical requirements, and implement end-to-end data solutions across diverse client domains, such as Supply Chain, Law, Oil and Gas, Industrial Asset Management.
           </p>
         </motion.div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <img
+            <Image
               src="/images/programmer-image.png"
               alt="image"
               width={300}

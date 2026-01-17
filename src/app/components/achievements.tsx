@@ -53,7 +53,7 @@ const AchievementsSection = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {achievementsList.map((achievement, index) => (
-          <a href={achievement.link}>
+          <a href={achievement.link} key={index}>
             <div key={index} className="bg-[#181818] rounded-lg p-6 flex flex-col items-center justify-center">
               <h3 className="text-white text-3xl font-bold">{achievement.metric}</h3>
               <p className="text-[#ADB7BE] text-lg font-semibold">{achievement.title}</p>
